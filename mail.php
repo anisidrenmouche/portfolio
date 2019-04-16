@@ -6,7 +6,7 @@ if ($_POST) {
   $name  =  $_POST['name'];
   
   $headers  =  "Version MIME: 1.0\r\n"; // header mail format
-  $headers  .=  "Type de contenu: text / plain; charset = iso-8859-1\r\n";
+  $headers  .=  "Type de contenu: text/plain; charset=iso-8859-1\r\n";
   $headers  .=  "De: $nom <$email>\r\n Répondre à: $nom <$email>\n X-Mailer: PHP";
   
   $message  =  $_POST['message'] . "\r\n Mail de : " . $firstname . " " . $name;
