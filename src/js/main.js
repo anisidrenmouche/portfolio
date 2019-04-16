@@ -14,10 +14,10 @@ $(document).ready(function(){
    $ ( ' #send_email ' ). click ( fonction ( e ) {
 		e . preventDefault (); // pour eviter que la page se recharge
 		var data = {
-			email :  $ ( ' #email ' ). val (),
-			nom :  $ ( ' #name ' ). val (),
-			objet :  $ ( ' #firstname ' ). val (),
-			message :  $ ( ' #message ' ). val ()
+			email: $('#email').val(),
+			nom:  $ ( ' #name ' ). val (),
+			objet:  $ ( ' #firstname ' ). val (),
+			message:  $ ( ' #message ' ). val ()
 		};
 		$ . ajax ({
 			url :  " mail.php " , // url
