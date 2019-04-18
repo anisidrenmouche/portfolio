@@ -13,7 +13,7 @@ if ($_POST) {
   
   $subject = "Prise de contact depuis le porte folio";
   $destinataire = "anisidrenmouche@hotmail.fr";
-  if (email($destinataire, $subject, $message, $headers)) {
+  if (mail($destinataire, $subject, $message, $headers)) {
     $response['status'] = 'success' ;
     $response['msg'] = 'votre courrier est envoyé' ;
   } else {
